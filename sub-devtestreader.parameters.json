@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "CC-LH-POC"
+        },
+        "mspOfferDescription": {
+            "value": "CC LH POC"
+        },
+        "managedByTenantId": {
+            "value": "9a9aaa56-1b28-4b38-bbd5-5a0f797c44ce"
+        },
+        "authorizations": {
+            "value": [
+
+                { 
+                    "principalId": "004b515e-fe62-4e84-94d8-196d9cb27861", 
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+                    "principalIdDisplayName": "CC-LH-Reader" 
+                },
+                { 
+                    "principalId": "004b515e-fe62-4e84-94d8-196d9cb27861", 
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46",
+                    "principalIdDisplayName": "CC-LH-Reader" 
+                }
+                
+                    ]
+                }                
+        }
+}
