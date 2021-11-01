@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mspOfferName": {
+            "value": "CC-LH-Monitoring-Poc"
+        },
+        "mspOfferDescription": {
+            "value": "CC LH Monitoring POC"
+        },
+        "managedByTenantId": {
+            "value": "9a9aaa56-1b28-4b38-bbd5-5a0f797c44ce"
+        },
+        "authorizations": {
+            "value": [
+
+                { 
+                    "principalId": "59fe45df-b30f-4ad3-b0f3-998d38a2b566", 
+                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+                    "principalIdDisplayName": "CC-LH-NOC" 
+                },
+                { 
+                    "principalId": "c42f6697-122f-44d4-a221-a8858557b803", 
+                    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46",
+                    "principalIdDisplayName": "cc-lh-delegationadmins" 
+                },
+                { 
+                    "principalId": "9f5f2d98-7208-47b2-8184-f2e7c4ca5746", 
+                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+                    "principalIdDisplayName": "CC_LH-VTSTS" 
+                }
+                
+                    ]
+                }                
+        }
+}
